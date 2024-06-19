@@ -133,32 +133,29 @@
             width: 100%;
             height: 100%;
         }
-		/* Add this CSS to your existing stylesheet */
-
 		.testimonial-container {
-			overflow: hidden; /* Hide overflow to contain testimonials */
-			white-space: nowrap; /* Prevent testimonials from wrapping */
-		}
+    overflow: hidden; /* Hide overflow to contain testimonials */
+    white-space: nowrap; /* Prevent testimonials from wrapping */
+    text-align: center; /* Center align testimonials */
+}
 
-		.testimonial {
-			display: inline-block; /* Display testimonials inline */
-			width: 200px; /* Adjust width of testimonial boxes */
-			padding: 10px;
-			margin-right: 20px;
-			background-color: #f0f0f0; /* Background color of testimonial boxes */
-			border-radius: 10px; /* Rounded corners */
-			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
-		}
+.testimonial {
+    display: inline-block; /* Display testimonials inline */
+    width: 250px; /* Adjust width of testimonial boxes */
+    padding: 20px;
+    margin-right: 20px;
+    background-color: #f0f0f0; /* Background color of testimonial boxes */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+    overflow: hidden; /* Hide overflow of text */
+    text-overflow: ellipsis; /* Display ellipsis (...) when text overflows */
+    white-space: nowrap; /* Prevent text wrapping */
+}
 
-		/* Animation for scrolling testimonials */
-		@keyframes scroll {
-			0% { transform: translateX(100%); } /* Start off screen to the right */
-			100% { transform: translateX(-100%); } /* Move to off screen to the left */
-		}
+.testimonial p {
+    margin-top: 10px; /* Add space between name and message */
+}
 
-		.testimonial {
-			animation: scroll 30s linear infinite; /* Adjust animation speed (30s) */
-		}
 
 		
     </style>
