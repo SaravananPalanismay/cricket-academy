@@ -80,36 +80,32 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
-        .testimonials {
-            position: relative;
-            overflow: hidden;
-            height: 250px; /* Adjust height as needed */
-            margin-top: 20px;
-        }
-        .testimonials .carousel {
+        .testimonial-container {
             display: flex;
-            animation: scroll 25s linear infinite;
+            overflow: hidden; /* Hide overflow to contain testimonials */
+            margin: 0 -20px; /* Add negative margin to counter container padding */
         }
-        .testimonials .testimonial {
-            width: 200px; /* Set the width to make it square */
-            height: 200px; /* Set the height to make it square */
-            box-sizing: border-box;
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.9);
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin: 0 10px;
+        .testimonial {
             flex: 0 0 auto;
-            font-weight: bold; /* Make text bold */
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            padding: 0 20px; /* Add padding to each testimonial */
+            animation: testimonial-animation 20s linear infinite; /* Adjust animation duration as needed */
+            background-color: #f0f0f0; /* Background color of testimonial boxes */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+            margin: 0 10px;
             text-align: center;
+            overflow: hidden; /* Hide overflow of text */
         }
-        @keyframes scroll {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-500%); }
+        .testimonial h3 {
+            font-weight: bold; /* Make name bold */
+            margin-bottom: 10px; /* Add space below name */
+        }
+        .testimonial p {
+            margin-top: 10px; /* Add space between name and message */
+        }
+        @keyframes testimonial-animation {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
         }
         footer {
             background-color: #333;
@@ -118,6 +114,7 @@
             padding: 10px 0;
             position: relative;
             width: 100%;
+            clear: both; /* Ensure footer clears content */
         }
         .map-container {
             position: relative;
@@ -133,67 +130,6 @@
             width: 100%;
             height: 100%;
         }
-		.testimonial-container {
-    overflow: hidden; /* Hide overflow to contain testimonials */
-    white-space: nowrap; /* Prevent testimonials from wrapping */
-    text-align: center; /* Center align testimonials */
-}
-
-.testimonial {
-    display: inline-block; /* Display testimonials inline */
-    width: 250px; /* Adjust width of testimonial boxes */
-    padding: 20px;
-    margin-right: 20px;
-    background-color: #f0f0f0; /* Background color of testimonial boxes */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
-    overflow: hidden; /* Hide overflow of text */
-    text-overflow: ellipsis; /* Display ellipsis (...) when text overflows */
-    white-space: nowrap; /* Prevent text wrapping */
-}
-
-.testimonial p {
-    margin-top: 10px; /* Add space between name and message */
-}
-.testimonial-container {
-    display: flex;
-    overflow: hidden; /* Hide overflow to contain testimonials */
-    margin: 0 -20px; /* Add negative margin to counter container padding */
-}
-
-.testimonial {
-    flex: 0 0 auto;
-    padding: 0 20px; /* Add padding to each testimonial */
-    animation: testimonial-animation 20s linear infinite; /* Adjust animation duration as needed */
-}
-
-.testimonial-content {
-    padding: 20px;
-    background-color: #f0f0f0; /* Background color of testimonial boxes */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
-    overflow: hidden; /* Hide overflow of text */
-}
-
-.testimonial h3 {
-    font-weight: bold; /* Make name bold */
-    margin-bottom: 10px; /* Add space below name */
-}
-
-@keyframes testimonial-animation {
-    0% { transform: translateX(100%); }
-    100% { transform: translateX(-100%); }
-}
-
-/* Ensure testimonials fit within viewport */
-@media (max-width: 768px) {
-    .testimonial-container {
-        flex-direction: column;
-    }
-}
-
-
-		
     </style>
 </head>
 <body>
