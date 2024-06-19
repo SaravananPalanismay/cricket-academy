@@ -20,7 +20,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: url('NETSFULL.jpg') no-repeat center center fixed;
+            background: url('images/ground1.JPG') no-repeat center center fixed;
             background-size: cover;
             opacity: 0.3; /* Adjust the opacity here */
             z-index: -1; /* Make sure the background is behind the content */
@@ -62,7 +62,7 @@
             overflow: hidden;
         }
         h2 {
-            color: navy;
+            color: #4CAF50;
             margin-bottom: 20px;
             font-size: 28px;
         }
@@ -96,11 +96,6 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             overflow: hidden; /* Hide overflow of text */
             text-align: center; /* Center align text */
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            white-space: normal; /* Allow text wrapping */
         }
         .testimonial h3 {
             font-weight: bold; /* Make name bold */
@@ -135,8 +130,12 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
             overflow: hidden; /* Hide overflow of text */
             text-overflow: ellipsis; /* Display ellipsis (...) when text overflows */
+            white-space: nowrap; /* Prevent text wrapping */
         }
 
+        .testimonial p {
+            margin-top: 10px; /* Add space between name and message */
+        }
         .testimonial-container {
             display: flex;
             overflow: hidden; /* Hide overflow to contain testimonials */
@@ -146,7 +145,7 @@
         .testimonial {
             flex: 0 0 auto;
             padding: 0 20px; /* Add padding to each testimonial */
-            animation: testimonial-animation 40s linear infinite; /* Adjust animation duration as needed */
+            animation: testimonial-animation 20s linear infinite; /* Adjust animation duration as needed */
             background-color: #f0f0f0; /* Background color of testimonial boxes */
             border-radius: 10px; /* Rounded corners */
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
@@ -160,6 +159,10 @@
             border-radius: 10px; /* Rounded corners */
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
             overflow: hidden; /* Hide overflow of text */
+        }
+        .testimonial h3 {
+            font-weight: bold; /* Make name bold */
+            margin-bottom: 10px; /* Add space below name */
         }
         @keyframes testimonial-animation {
             0% { transform: translateX(100%); }
@@ -190,12 +193,12 @@
             <p>Our state-of-the-art facilities and personalized coaching approach ensure that each student receives the attention and resources they need to excel. We are proud to have produced players who have competed and excelled in prestigious tournaments such as the IPL, TNPL, and Ranji Trophy.</p>
             <p>At our academy, we believe in fostering a positive and supportive environment where students can develop their skills, build confidence, and learn the values of teamwork and sportsmanship. Join us to embark on an exciting cricketing journey and unlock your true potential on the field.</p>
             <div class="gallery">
-                <img src="pitch1.jpg" alt="Cricket Action">
-                <img src="boyspractice.jpg" alt="Cricket Ball">
-				<img src="bousinnet3.jpg" alt="Cricket Action">
-                <img src="boysinpractice.jpg" alt="Cricket Ball">
-				<img src="Boysinnet1.jpg" alt="Cricket Action">
-                <img src="Boysinnet2.jpg" alt="Cricket Ball">
+                <img src="pitch1.JPG" alt="Cricket Action">
+                <img src="boyspractice.JPG" alt="Cricket Ball">
+				<img src="bousinnet3.JPG" alt="Cricket Action">
+                <img src="boysinpractice.JPG" alt="Cricket Ball">
+				<img src="Boysinnet1.JPG" alt="Cricket Action">
+                <img src="Boysinnet2.JPG" alt="Cricket Ball">
             </div>
         </section>
         <section id="services">
@@ -230,7 +233,7 @@
         <section id="contact">
             <h2>Contact Us</h2>
             <p>Mr. Vinod: +91-8248112380</p>
-	        <p>E-mail: vividcricketacademy@gmail.com</p>
+	    <p>E-mail: vividcricketacademy@gmail.com</p>
             <div class="map-container">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.1891122112614!2d77.01047281482255!3d11.046881692989986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba857006e237d19%3A0x212093776c91643!2sVivid%20Cricket%20Academy!5e0!3m2!1sen!2sin!4v1623942005568!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
