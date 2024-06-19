@@ -4,61 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vivid Cricket Academy, Coimbatore</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4; /* Set a plain background color */
-            color: #333; /* Set a text color */
-            position: relative;
-            color: white;
-            text-shadow: 1px 1px 2px black;
-        }
-        body::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.5); /* Reduces the opacity of the background image */
-            z-index: -1;
+            background-color: #f4f4f4;
+            color: #333;
         }
         header {
-            background-color: rgba(76, 175, 80, 0.8);
+            background-color: #4CAF50;
+            color: white;
             padding: 20px 0;
             text-align: center;
+            font-size: 24px;
+            font-weight: bold;
         }
         nav {
             display: flex;
             justify-content: center;
-            background-color: rgba(51, 51, 51, 0.8);
+            background-color: #333;
         }
         nav a {
             color: white;
             padding: 14px 20px;
             text-decoration: none;
             text-align: center;
+            font-size: 16px;
         }
         nav a:hover {
-            background-color: rgba(87, 87, 87, 0.8);
+            background-color: #575757;
         }
         section {
             padding: 40px 20px;
             text-align: center;
-            background-color: rgba(0, 0, 0, 0.6);
+            background-color: white;
             margin: 20px;
             border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         .container {
             max-width: 1200px;
             margin: auto;
-            overflow: hidden;
         }
         h2 {
-            color: #FFD700; /* Different color for headings */
+            color: #4CAF50;
             margin-bottom: 20px;
+            font-size: 28px;
         }
         .gallery {
             display: flex;
@@ -71,21 +64,20 @@
             max-width: 300px;
             margin: 10px;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         footer {
-            background-color: rgba(51, 51, 51, 0.8);
+            background-color: #333;
             color: white;
             text-align: center;
             padding: 10px 0;
-            position: fixed;
-            bottom: 0;
+            position: relative;
             width: 100%;
         }
         .map-container {
             position: relative;
             overflow: hidden;
-            padding-bottom: 56.25%; /* Aspect ratio (16:9) */
+            padding-bottom: 56.25%;
             height: 0;
             margin-bottom: 20px;
         }
@@ -100,7 +92,7 @@
 </head>
 <body>
     <header>
-        <h1>Vivid Cricket Academy, Coimbatore.</h1>
+        Vivid Cricket Academy, Coimbatore
     </header>
     <nav>
         <a href="#about">About Us</a>
@@ -108,31 +100,33 @@
         <a href="#testimonials">Testimonials</a>
         <a href="#contact">Contact Us</a>
     </nav>
-    <section id="about" class="container">
-        <h2>About Us</h2>
-        <p>At our Cricket Academy, we are dedicated to nurturing the cricketing talents of young enthusiasts and helping them achieve their full potential. With over 25 years of coaching experience, our head coach Vinod Sir has guided numerous students from beginners to professional athletes. Our comprehensive training programs cover all aspects of the game, including batting, bowling, fielding, and mental conditioning.</p>
-        <p>Our state-of-the-art facilities and personalized coaching approach ensure that each student receives the attention and resources they need to excel. We are proud to have produced players who have competed and excelled in prestigious tournaments such as the IPL, TNPL, and Ranji Trophy.</p>
-        <p>At our academy, we believe in fostering a positive and supportive environment where students can develop their skills, build confidence, and learn the values of teamwork and sportsmanship. Join us to embark on an exciting cricketing journey and unlock your true potential on the field.</p>
-        <div class="gallery">
-            <img src="cricket.jpg" alt="Cricket Action">
-            <img src="cricket-batting.jpg" alt="Cricket Ball">
-        </div>
-    </section>
-    <section id="services" class="container">
-        <h2>Coaching Services</h2>
-        <p>Our services include training for beginners to experts.</p>
-    </section>
-    <section id="testimonials" class="container">
-        <h2>Testimonials</h2>
-        <p>Our students have excelled in IPL, TNPL, and Ranji Trophy.</p>
-    </section>
-    <section id="contact" class="container">
-        <h2>Contact Us</h2>
-        <p>Mr. Vinod: +91-8248112380</p>
-        <div class="map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.1891122112614!2d77.01047281482255!3d11.046881692989986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba857006e237d19%3A0x212093776c91643!2sVivid%20Cricket%20Academy!5e0!3m2!1sen!2sin!4v1623942005568!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-    </section>
+    <div class="container">
+        <section id="about">
+            <h2>About Us</h2>
+            <p>At our Cricket Academy, we are dedicated to nurturing the cricketing talents of young enthusiasts and helping them achieve their full potential. With over 25 years of coaching experience, our head coach Vinod Sir has guided numerous students from beginners to professional athletes. Our comprehensive training programs cover all aspects of the game, including batting, bowling, fielding, and mental conditioning.</p>
+            <p>Our state-of-the-art facilities and personalized coaching approach ensure that each student receives the attention and resources they need to excel. We are proud to have produced players who have competed and excelled in prestigious tournaments such as the IPL, TNPL, and Ranji Trophy.</p>
+            <p>At our academy, we believe in fostering a positive and supportive environment where students can develop their skills, build confidence, and learn the values of teamwork and sportsmanship. Join us to embark on an exciting cricketing journey and unlock your true potential on the field.</p>
+            <div class="gallery">
+                <img src="cricket.jpg" alt="Cricket Action">
+                <img src="cricket-batting.jpg" alt="Cricket Ball">
+            </div>
+        </section>
+        <section id="services">
+            <h2>Coaching Services</h2>
+            <p>Our services include training for beginners to experts.</p>
+        </section>
+        <section id="testimonials">
+            <h2>Testimonials</h2>
+            <p>Our students have excelled in IPL, TNPL, and Ranji Trophy.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Mr. Vinod: +91-8248112380</p>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.1891122112614!2d77.01047281482255!3d11.046881692989986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba857006e237d19%3A0x212093776c91643!2sVivid%20Cricket%20Academy!5e0!3m2!1sen!2sin!4v1623942005568!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+    </div>
     <footer>
         <p>&copy; 2024 Vivid Cricket Academy, Coimbatore</p>
     </footer>
