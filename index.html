@@ -155,6 +155,42 @@
 .testimonial p {
     margin-top: 10px; /* Add space between name and message */
 }
+.testimonial-container {
+    display: flex;
+    overflow: hidden; /* Hide overflow to contain testimonials */
+    margin: 0 -20px; /* Add negative margin to counter container padding */
+}
+
+.testimonial {
+    flex: 0 0 auto;
+    padding: 0 20px; /* Add padding to each testimonial */
+    animation: testimonial-animation 20s linear infinite; /* Adjust animation duration as needed */
+}
+
+.testimonial-content {
+    padding: 20px;
+    background-color: #f0f0f0; /* Background color of testimonial boxes */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+    overflow: hidden; /* Hide overflow of text */
+}
+
+.testimonial h3 {
+    font-weight: bold; /* Make name bold */
+    margin-bottom: 10px; /* Add space below name */
+}
+
+@keyframes testimonial-animation {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+/* Ensure testimonials fit within viewport */
+@media (max-width: 768px) {
+    .testimonial-container {
+        flex-direction: column;
+    }
+}
 
 
 		
@@ -186,30 +222,40 @@
             <p>Our services include training for beginners to experts.</p>
         </section>
         <section id="testimonials" class="container">
-			<h2>Testimonials</h2>
-			<div class="testimonial-container">
-				<div class="testimonial">
-					<h3>Alwin</h3>
-					<p>"Vivid Cricket Academy has transformed my game. The coaches are top-notch!"</p>
-				</div>
-				<div class="testimonial">
-					<h3>SriHari</h3>
-					<p>"Amazing facilities and personalized coaching. I have improved tremendously."</p>
-				</div>
-				<div class="testimonial">
-					<h3>Tajio</h3>
-					<p>"The best place to learn and grow as a cricketer."</p>
-				</div>
-				<div class="testimonial">
-					<h3>Sid</h3>
-					<p>"The training programs are comprehensive and effective."</p>
-				</div>
-				<div class="testimonial">
-					<h3>Kanishq</h3>
-					<p>"I love the positive environment and the focus on teamwork."</p>
-				</div>
-			</div>
-		</section>
+    <h2>Testimonials</h2>
+    <div class="testimonial-container">
+        <div class="testimonial">
+            <div class="testimonial-content">
+                <h3>Alwin</h3>
+                <p>"Vivid Cricket Academy has transformed my game. The coaches are top-notch!"</p>
+            </div>
+        </div>
+        <div class="testimonial">
+            <div class="testimonial-content">
+                <h3>SriHari</h3>
+                <p>"Amazing facilities and personalized coaching. I have improved tremendously."</p>
+            </div>
+        </div>
+        <div class="testimonial">
+            <div class="testimonial-content">
+                <h3>Tajio</h3>
+                <p>"The best place to learn and grow as a cricketer."</p>
+            </div>
+        </div>
+        <div class="testimonial">
+            <div class="testimonial-content">
+                <h3>Sid</h3>
+                <p>"The training programs are comprehensive and effective."</p>
+            </div>
+        </div>
+        <div class="testimonial">
+            <div class="testimonial-content">
+                <h3>Kanishq</h3>
+                <p>"I love the positive environment and the focus on teamwork."</p>
+            </div>
+        </div>
+    </div>
+</section>
         <section id="contact">
             <h2>Contact Us</h2>
             <p>Mr. Vinod: +91-8248112380</p>
