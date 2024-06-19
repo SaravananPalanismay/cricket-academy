@@ -103,6 +103,12 @@
         }
         .testimonial p {
             margin-top: 10px; /* Add space between name and message */
+            overflow: hidden; /* Hide overflow */
+            text-overflow: ellipsis; /* Show ellipsis for overflow */
+            white-space: normal; /* Allow text wrapping */
+            display: -webkit-box;
+            -webkit-line-clamp: 4; /* Limit number of lines */
+            -webkit-box-orient: vertical;
         }
         @keyframes testimonial-animation {
             0% { transform: translateX(100%); }
